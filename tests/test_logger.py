@@ -10,7 +10,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'l
 from filters import InfoOnlyFilter
 
 # Charger la configuration YAML
-with open(os.path.join(os.path.dirname(__file__), '..', 'logger', 'logging_config.yaml'), 'r') as f:
+with open(os.path.join(os.path.dirname(__file__),'..' ,'logger', 'logging_config.yaml'), 'r') as f:
     config = yaml.safe_load(f)
     logging.config.dictConfig(config)
 
