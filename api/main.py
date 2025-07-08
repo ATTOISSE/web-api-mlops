@@ -5,7 +5,7 @@ import sys, os
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from db.connexion import SessionLocal
-from schemas.schemas import User as UserSchema  # Import correct avec le chemin complet
+from schemas.schemas import User as UserSchema  
 from db.crud import get_all_users, get_user
 
 app = FastAPI()
@@ -51,4 +51,4 @@ def root():
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="127.0.0.1", port=8000)
